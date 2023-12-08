@@ -97,6 +97,7 @@ input:checked + .slider-theme:before {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  height: 50px;
 }
 
 .navbar.dark {
@@ -112,6 +113,12 @@ input:checked + .slider-theme:before {
 
 .navbar .link-contato a {
   text-decoration: none;
+}
+
+.nav-active {
+  border-radius: 10px;
+  background-color: #b2b2b2;
+  padding: 5px;
 }
 
 .navbar .links {
