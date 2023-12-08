@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/template.css" />
+
+    <link rel="stylesheet" href="../static/portfolio.css" />
+
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <div class="user-auth active"></div>
+    <header id="header" class="header">
+      <div class="logo-header">
+        <a href="/"
+          ><img
+            src="../static/assets/logo_dizer_dev.png"
+            alt="logo_diego_zerbini_dev"
+            height="70px"
+        /></a>
+        <h1>Diego Zerbini</h1>
+      </div>
+      <div class="title-header">
+        <h2>Desenvolvedor Web</h2>
+      </div>
+    </header>
+    <nav id="navbar" class="navbar">
+      <ul class="links">
+        <li class="button-header"><a href="./about.html">Sobre mim</a></li>
+        <li class="button-header">
+          <a href="./certificates.html">Certificados</a>
+        </li>
+        <li class="button-header"><a href="./portfolio.html">Portfólio</a></li>
+        <li class="button-header"><a href="./articles.html">Artigos</a></li>
+        <li class="button-header"><a href="./contact.html">Contato</a></li>
+        <li class="button-header"><a href="./login.html">Login</a></li>
+      </ul>
+      <label class="switch-theme">
+        <input type="checkbox" id="switch" />
+        <span class="slider-theme"></span>
+      </label>
+    </nav>
+    <main>
+      <section class="gallery">
+        <h2>Galeria de Imagens</h2>
+        <div class="image-gallery">
+          <!-- Inclua suas imagens aqui -->
+          <img src="image1.jpg" alt="Imagem 1" />
+          <img src="image2.jpg" alt="Imagem 2" />
+          <img src="image3.jpg" alt="Imagem 3" />
+        </div>
+      </section>
+
+      <section class="about">
+        <h2>Sobre Mim</h2>
+        <div class="about-content">
+          <img src="your_photo.jpg" alt="Sua Foto" />
+          <p>Adicione uma descrição sobre você aqui.</p>
+        </div>
+      </section>
+
+      <section class="portfolio-list">
+        <h2>Meu Portfólio</h2>
+        <ul>
+          <li>
+            <button class="toggle-button">Projeto 1</button>
+            <p class="toggle-content">Descrição do Projeto 1.</p>
+          </li>
+          <li>
+            <button class="toggle-button">Projeto 2</button>
+            <p class="toggle-content">Descrição do Projeto 2.</p>
+          </li>
+          <li>
+            <button class="toggle-button">Projeto 3</button>
+            <p class="toggle-content">Descrição do Projeto 3.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="contact-info">
+        <p>Telefone: (11) 98692-1165</p>
+        <p>Email: zerbiniprogramador@gmail.com</p>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://github.com/dizerdev"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="../static/assets/github-icon.png" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/dizerdev/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="../static/assets/linkedin-icon.png" alt="Linkedin"
+        /></a>
+        <a
+          href="https://wa.me/message/MTG3FKJWBA53L1"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="../static/assets/whatsapp-icon.png" alt="Instagram"
+        /></a>
+        <!-- Adicione mais links para redes sociais conforme necessário -->
+      </div>
+    </footer>
+    <script defer>
+      const theme = document.getElementById('switch');
+      const header = document.getElementById('header');
+      const footer = document.getElementById('footer');
+      const navbar = document.getElementById('navbar');
+
+      theme.addEventListener('click', () => {
+        header.classList.toggle('dark');
+        footer.classList.toggle('dark');
+        navbar.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch&display=swap');
+
+.title-home {
+  font-size: 3rem;
+  font-family: 'Smooch', cursive;
+  margin: 0 30px 10px 30px;
+  letter-spacing: 5px;
+}
+
+.home-container {
+  position: relative;
+  min-height: 60vh;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  --s: 400px;
+  --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9;
+
+  --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+    conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+    linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    );
+  background-size: calc(1.732 * var(--s)) var(--s);
+}
+
+.home-container .logo-home {
+  position: inherit;
+  height: 480px;
+  width: 480px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.home-container .logo-home .main-img {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.home-container .logo-home .main-img.active {
+  animation: spin 8s linear 1s infinite;
+  cursor: help;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.home-container .logo-home .circle {
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  opacity: 0;
+}
+
+.home-container .logo-home .main-img.active .circle {
+  opacity: 1;
+  transition: 1s ease;
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(1) {
+  background: url(./assets/javascript-logo.png);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translateY(-210%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(2) {
+  background: url(./assets/reactjs-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translate(150%, -150%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(3) {
+  background: url(./assets/nextjs-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translate(210%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(4) {
+  background: url(./assets/php-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translate(150%, 150%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(5) {
+  background: url(./assets/csharp-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translateY(210%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(6) {
+  background: url(./assets/pg-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(7) {
+  background: url(./assets/flask-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translateX(-210%);
+}
+
+.home-container .logo-home .main-img.active .circle:nth-child(8) {
+  background: url(./assets/python-logo.jpg);
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  transform: translate(-150%, -150%);
+}
+
+.home-container img {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  border: 4px solid #1c1c1c;
+  transform: translate(-200px);
+  opacity: 0;
+  animation: fade-in 1s ease 1 0.5s forwards;
+}
+
+@keyframes fade-in {
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2-card-home {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 10px 40px;
+}
+
+.h2-card-home img {
+  margin-right: 20px;
+  width: 70px;
+}
+
+.h3-card-home {
+  display: flex;
+  align-items: center;
+}
+
+.h3-card-home img {
+  width: 50px;
+  margin-left: 20px;
+  transition: 0.3s ease-out;
+}
+
+.h3-card-home img:hover {
+  filter: contrast(10%);
+  cursor: pointer;
+}
+
+.product-card .iframe {
+  width: 100%;
+  height: 600px;
+}
+
+.product-card img {
+  max-width: 100px;
+  max-height: 100px;
+}

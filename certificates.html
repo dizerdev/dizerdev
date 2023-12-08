@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/template.css" />
+
+    <link rel="stylesheet" href="../static/index.css" />
+
+    <title>Página Inicial</title>
+  </head>
+  <body>
+    <div class="user-auth active"></div>
+    <header id="header" class="header">
+      <div class="logo-header">
+        <a href="/"
+          ><img
+            src="../static/assets/logo_dizer_dev.png"
+            alt="logo_diego_zerbini_dev"
+            height="70px"
+        /></a>
+        <h1>Diego Zerbini</h1>
+      </div>
+      <div class="title-header">
+        <h2>Desenvolvedor Web</h2>
+      </div>
+    </header>
+    <nav id="navbar" class="navbar">
+      <ul class="links">
+        <li class="button-header"><a href="./about.html">Sobre mim</a></li>
+        <li class="button-header">
+          <a href="./certificates.html">Certificados</a>
+        </li>
+        <li class="button-header"><a href="./portfolio.html">Portfólio</a></li>
+        <li class="button-header"><a href="./articles.html">Artigos</a></li>
+        <li class="button-header"><a href="./contact.html">Contato</a></li>
+        <li class="button-header"><a href="./login.html">Login</a></li>
+      </ul>
+      <label class="switch-theme">
+        <input type="checkbox" id="switch" />
+        <span class="slider-theme"></span>
+      </label>
+    </nav>
+    <main>
+      <div>
+        <section class="certificate">
+          <h2>Nome do Curso 1</h2>
+          <p>Instituição de Ensino: Nome da Instituição 1</p>
+          <p>Duração do Curso: 6 meses</p>
+          <p>
+            Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </p>
+        </section>
+      </div>
+      <section class="certificate">
+        <h2>Nome do Curso 2</h2>
+        <p>Instituição de Ensino: Nome da Instituição 2</p>
+        <p>Duração do Curso: 3 meses</p>
+        <p>
+          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </section>
+      <section class="certificate">
+        <h2>Nome do Curso 3</h2>
+        <p>Instituição de Ensino: Nome da Instituição 3</p>
+        <p>Duração do Curso: 4 meses</p>
+        <p>
+          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </section>
+      <section class="certificate">
+        <h2>Nome do Curso 4</h2>
+        <p>Instituição de Ensino: Nome da Instituição 4</p>
+        <p>Duração do Curso: 5 meses</p>
+        <p>
+          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </section>
+      <section class="certificate">
+        <h2>Nome do Curso 5</h2>
+        <p>Instituição de Ensino: Nome da Instituição 5</p>
+        <p>Duração do Curso: 3 meses</p>
+        <p>
+          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </section>
+      <section class="certificate">
+        <h2>Nome do Curso 6</h2>
+        <p>Instituição de Ensino: Nome da Instituição 6</p>
+        <p>Duração do Curso: 6 meses</p>
+        <p>
+          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </section>
+      <div class="gallery">
+        <img src="certificate1.jpg" alt="Certificado 1" />
+        <img src="certificate2.jpg" alt="Certificado 2" />
+        <img src="certificate3.jpg" alt="Certificado 3" />
+        <img src="certificate4.jpg" alt="Certificado 4" />
+        <img src="certificate5.jpg" alt="Certificado 5" />
+        <img src="certificate6.jpg" alt="Certificado 6" />
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="contact-info">
+        <p>Telefone: (11) 98692-1165</p>
+        <p>Email: zerbiniprogramador@gmail.com</p>
+      </div>
+      <div class="social-links">
+        <a
+          href="https://github.com/dizerdev"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="../static/assets/github-icon.png" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/dizerdev/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="../static/assets/linkedin-icon.png" alt="Linkedin"
+        /></a>
+        <a
+          href="https://wa.me/message/MTG3FKJWBA53L1"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="../static/assets/whatsapp-icon.png" alt="Instagram"
+        /></a>
+        <!-- Adicione mais links para redes sociais conforme necessário -->
+      </div>
+    </footer>
+    <script defer>
+      const theme = document.getElementById('switch');
+      const header = document.getElementById('header');
+      const footer = document.getElementById('footer');
+      const navbar = document.getElementById('navbar');
+
+      theme.addEventListener('click', () => {
+        header.classList.toggle('dark');
+        footer.classList.toggle('dark');
+        navbar.classList.toggle('dark');
+      });
+    </script>
+  </body>
+</html>

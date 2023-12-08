@@ -1,0 +1,52 @@
+section {
+    padding: 20px;
+}
+
+.gallery, .about, .portfolio-list {
+    background-color: #f5f5f5;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.image-gallery img {
+    max-width: 30%;
+    margin: 10px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+.about-content img {
+    max-width: 40%;
+    margin-right: 20px;
+}
+
+.toggle-content {
+    display: none;
+}
+
+.toggle-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.toggle-button:hover {
+    background-color: #555;
+}
+
+.toggle-button.active + .toggle-content {
+    display: block;
+}

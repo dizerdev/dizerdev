@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+.header {
+  background-color: #b2b2b2;
+  color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 30px;
+}
+
+.header.dark {
+  background-color: #1c1c1c;
+  color: #b2b2b2;
+}
+
+.header .logo-header {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header .title-header h2 {
+  display: flex;
+}
+
+.header .logo-header a {
+  margin-right: 20px;
+}
+
+.switch-theme {
+  display: block;
+  --width-of-switch: 3.5em;
+  --height-of-switch: 2em;
+  /* size of sliding icon -- sun and moon */
+  --size-of-icon: 1.4em;
+  /* it is like a inline-padding of switch */
+  --slider-offset: 0.3em;
+  position: relative;
+  width: var(--width-of-switch);
+  height: var(--height-of-switch);
+}
+
+/* Hide default HTML checkbox */
+.switch-theme input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider-theme {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #f4f4f5;
+  transition: 0.4s;
+  border-radius: 30px;
+}
+
+.slider-theme:before {
+  position: absolute;
+  content: '';
+  height: var(--size-of-icon, 1.4em);
+  width: var(--size-of-icon, 1.4em);
+  border-radius: 20px;
+  left: var(--slider-offset, 0.3em);
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(40deg, #ff0080, #ff8c00 70%);
+  transition: 0.4s;
+}
+
+input:checked + .slider-theme {
+  background-color: #303136;
+}
+
+input:checked + .slider-theme:before {
+  left: calc(100% - (var(--size-of-icon, 1.4em) + var(--slider-offset, 0.3em)));
+  background: #303136;
+  /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+  box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navbar.dark {
+  background-color: #303136;
+  color: #b2b2b2;
+}
+
+.navbar .link-contato {
+  display: flex;
+  text-decoration: none;
+  position: relative;
+}
+
+.navbar .link-contato a {
+  text-decoration: none;
+}
+
+.navbar .links {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding-right: 50px;
+}
+.navbar .links li {
+  margin-right: 30px;
+  padding-right: 20px;
+}
+.navbar .links a {
+  display: flex;
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+.button-header {
+  align-items: center;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  text-transform: uppercase;
+  outline: 0;
+  border: 0;
+  padding: 1rem;
+}
+
+.button-header:before {
+  background-color: #1c1c1c;
+  content: '';
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  transition: all 0.42s cubic-bezier(0.25, 0.8, 0.25, 1);
+  width: 0;
+}
+
+.button-header:hover:before {
+  background-color: #1c1c1c;
+  width: 3rem;
+}
+
+/* footer */
+.footer {
+  background-color: #b2b2b2;
+  color: #1c1c1c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+  bottom: 0;
+  min-width: 100vh;
+}
+
+.footer.dark {
+  background-color: #1c1c1c;
+  color: #b2b2b2;
+}
+
+.footer .contact-info {
+  text-align: left;
+}
+.footer .social-links {
+  text-align: right;
+}
+
+.footer .social-links img {
+  width: 30px;
+  margin-left: 20px;
+  transition: 0.5s ease-out;
+}
+
+.footer .social-links img:hover {
+  width: 40px;
+  margin-left: 20px;
+  filter: contrast(5) hue-rotate(-15deg) saturate(1.5);
+}
