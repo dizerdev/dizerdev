@@ -17,7 +17,7 @@
           ><img
             src="./static/assets/logo_dizer_dev.png"
             alt="logo_diego_zerbini_dev"
-            height="70px"
+            height="50px"
         /></a>
         <h1>Diego Zerbini</h1>
       </div>
@@ -34,17 +34,17 @@
           <a href="./certificates.html">Certificados</a>
         </li>
         <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
+        <li class="button-header"><a href="./videos.html">Videos</a></li>
         <li class="button-header"><a href="./articles.html">Artigos</a></li>
         <li class="button-header"><a href="./contact.html">Contato</a></li>
-        <li class="button-header"><a href="./login.html">Login</a></li>
       </ul>
       <label class="switch-theme">
         <input type="checkbox" id="switch" />
         <span class="slider-theme"></span>
       </label>
     </nav>
-    <main>
-      <div class="container-about">
+    <main id="main-about">
+      <div id="container-about" class="container-about">
         <img
           src="./static/assets/PERFIL NOVO 2.jpg"
           alt="Sua Foto"
@@ -79,11 +79,15 @@
           aprimorar e otimizar seus processos.
         </p>
         <h3>Competências</h3>
-        <p></p>
-        <h3>Contato</h3>
         <p>
-          Você pode me contatar em
-          <a href="mailto:seuemail@example.com">seuemail@example.com</a>.
+          <strong>SOFT-SKILLS</strong>: Analise e solução de problemas,
+          pensamento crítico, criatividade, relacionamento interpessoal, gestão,
+          liderança e empatia, inteligência emocional e positiva, comunicação
+          assertiva, gestão de conflitos e negociação e flexibilidade cognitiva.
+          <br />
+          <strong>HARD-SKILLS</strong>: BPM, acompanhamento e gestão de
+          processos, engenharia de requisitos, web design, UI/UX, HTML5 e CSS3,
+          JavaScript, NextJs, Python, Flask, PHP, API Rest, ETL, C#, SQL.
         </p>
       </div>
     </main>
@@ -120,11 +124,14 @@
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
       const navbar = document.getElementById('navbar');
-
+      const containerAbout = document.getElementById('container-about');
+      const mainAbout = document.getElementById('main-about');
       theme.addEventListener('click', () => {
         header.classList.toggle('dark');
         footer.classList.toggle('dark');
         navbar.classList.toggle('dark');
+        containerAbout.classList.toggle('dark');
+        mainAbout.classList.toggle('dark');
       });
     </script>
   </body>

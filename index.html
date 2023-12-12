@@ -11,11 +11,11 @@
   <div class="user-auth active"></div>
   <header id="header" class="header">
     <div class="logo-header">
-      <a href="./index.html"
+      <a href="./"
         ><img
           src="./static/assets/logo_dizer_dev.png"
           alt="logo_diego_zerbini_dev"
-          height="70px"
+          height="50px"
       /></a>
       <h1>Diego Zerbini</h1>
     </div>
@@ -29,9 +29,9 @@
       <li class="button-header"><a href="./about.html">Sobre mim</a></li>
       <li class="button-header"><a href="./certificates.html">Certificados</a></li>
       <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
+      <li class="button-header"><a href="./videos.html">Videos</a></li>
       <li class="button-header"><a href="./articles.html">Artigos</a></li>
       <li class="button-header"><a href="./contact.html">Contato</a></li>
-      <li class="button-header"><a href="./login.html">Login</a></li>
     </ul>
     <label class="switch-theme">
       <input type="checkbox" id="switch" />
@@ -40,9 +40,8 @@
   </nav>
 
   <main>
-
-    <section class="home-container">
-      <h1 class="title-home">Seja bem-vindo!</h1>
+    <section id="home-container" class="home-container">
+      <h1 id="title-home" class="title-home">Seja bem-vindo!</h1>
       <div class="logo-home">
         <div class="main-img">
           <span class="circle"></span>
@@ -58,7 +57,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="main-section" class="main-section">
       <h2 class="h2-card-home"><img src="./static/assets/project-icon.png" alt="logo-github">Projetos realizados</h2>
 
       <div class="product-card">
@@ -117,7 +116,7 @@
         </p>
       </div>
 
-      <h1>Mais em breve...</h1>
+      <h1 class="more-h1">Mais em breve...</h1>
     </section>
 
     <script>
@@ -159,11 +158,17 @@
     const header = document.getElementById('header');
     const footer = document.getElementById('footer');
     const navbar = document.getElementById('navbar');
+    const mainSecton = document.getElementById('main-section');
+    const homeContainer = document.getElementById('home-container');
+    const titleHome = document.getElementById('title-home');
 
     theme.addEventListener('click', () => {
       header.classList.toggle('dark');
       footer.classList.toggle('dark');
       navbar.classList.toggle('dark');
+      mainSecton.classList.toggle('dark');
+      homeContainer.classList.toggle('dark');
+      titleHome.classList.toggle('dark');
     });
   </script>
 </body>

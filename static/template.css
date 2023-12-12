@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5px 30px;
+  padding: 0px 100px 0px 30px;
 }
 
 .header.dark {
@@ -33,7 +33,7 @@ body {
 }
 
 .header .logo-header a {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 
 .switch-theme {
@@ -54,6 +54,11 @@ body {
   opacity: 0;
   width: 0;
   height: 0;
+}
+
+.main-section.dark {
+  background-color: #1c1c1c;
+  color: #f4f4f5;
 }
 
 /* The slider */
@@ -137,6 +142,10 @@ input:checked + .slider-theme:before {
   text-decoration: none;
 }
 
+.navbar.dark .links a {
+  color: #fff;
+}
+
 .button-header {
   align-items: center;
   background-color: transparent;
@@ -182,7 +191,7 @@ input:checked + .slider-theme:before {
 }
 
 .footer.dark {
-  background-color: #1c1c1c;
+  background-color: #303136;
   color: #b2b2b2;
 }
 

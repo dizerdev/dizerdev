@@ -7,6 +7,13 @@
   letter-spacing: 5px;
 }
 
+.title-home.dark {
+  color: #ffffff;
+  background-color: #1c1c1c;
+  padding: 0 30px;
+  border-radius: 20px;
+}
+
 .home-container {
   position: relative;
   min-height: 60vh;
@@ -41,6 +48,12 @@
       var(--c2) 0
     );
   background-size: calc(1.732 * var(--s)) var(--s);
+}
+
+.home-container.dark {
+  --c1: #696969;
+  --c2: #d3d3d3;
+  --c3: #bebebe;
 }
 
 .home-container .logo-home {
@@ -190,7 +203,8 @@
 .h2-card-home {
   display: flex;
   align-items: center;
-  margin: 10px 0 10px 40px;
+  margin: 0 0 10px 40px;
+  padding-top: 10px;
 }
 
 .h2-card-home img {
@@ -222,4 +236,9 @@
 .product-card img {
   max-width: 100px;
   max-height: 100px;
+}
+
+.more-h1 {
+  margin: 0;
+  padding: 0 20px 20px 50px;
 }
