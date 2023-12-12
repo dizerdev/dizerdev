@@ -11,9 +11,10 @@
   </head>
   <body>
     <div class="user-auth active"></div>
+    <!-- HEADER -->
     <header id="header" class="header">
       <div class="logo-header">
-        <a href="./index.html"
+        <a href="./"
           ><img
             src="./static/assets/logo_dizer_dev.png"
             alt="logo_diego_zerbini_dev"
@@ -25,6 +26,7 @@
         <h2>Desenvolvedor Web</h2>
       </div>
     </header>
+    <!-- NAV -->
     <nav id="navbar" class="navbar">
       <ul class="links">
         <li class="button-header">
@@ -43,71 +45,161 @@
         <span class="slider-theme"></span>
       </label>
     </nav>
-    <main>
-      <div>
-        <section class="certificate">
-          <h2>Nome do Curso 1</h2>
-          <p>Instituição de Ensino: Nome da Instituição 1</p>
-          <p>Duração do Curso: 6 meses</p>
-          <p>
-            Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-          </p>
-        </section>
-      </div>
-      <section class="certificate">
-        <h2>Nome do Curso 2</h2>
-        <p>Instituição de Ensino: Nome da Instituição 2</p>
-        <p>Duração do Curso: 3 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
+    <!-- MAIN -->
+    <main id="certificates-container" class="certificates-container">
+      <section id="certificates-section" class="certificates-section">
+        <div class="card">
+          <img src="./static/assets/21.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">A.I. & Machine Learning</p>
+            <p class="card__description">
+              Conceitos básicos sobre estrutura de dados e algoritmos de busca e
+              ordenação. Machile Learning através do Orange Data Mine e
+              bibliotecas Python como pandas, mlrose, gym, spacy, tensorflow e
+              suas dependências.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/19.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">PHP7</p>
+            <p class="card__description">
+              Linguagem utilizada do lado servidor para gerenciar e manipular
+              requisições do lado cliente, disponibilizar APIs e controlar
+              métodos HTTP enviados ao banco de dados.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/18.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">Infraestrutura e Redes</p>
+            <p class="card__description">
+              Conceito de transmissão de dados, meios de transmissão e seus
+              componentes. O conceito da transmissão de dados por acesso remoto
+              através do processo de multiplexação do sinal. Modelo OSI e
+              conceitos básicos de TCP/IP, IPV4 e IPV6.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/17.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">JavaScript</p>
+            <p class="card__description">
+              JavaScript, a principal linguagem utilizada para a construção de
+              interfaces do lado cliente, por ser a linguagem nativa do browser.
+              Extremamente versátil e possui bibliotecas como React e Next.js
+              que possibilitam construção rápida de sistemas completos.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/15.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">C# 2017</p>
+            <p class="card__description">
+              Principal linguagem Microsoft para desenvolvimento de aplicações
+              Desktop utilizando .NET framework e para desenvolvimento Web
+              utilizando ASP.NET framework.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/14.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">ETL com Python</p>
+            <p class="card__description">
+              ETL é a sigla para Extract, Transform and Load. Processo utilizado
+              na Ciência de Dados para preparar, enriquecer e tratar e carregar
+              os dados em uma ou mais fontes. É parte fundamental para o
+              processo da Engenharia de Dados.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/14.1.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">Fundamentos de SOC</p>
+            <p class="card__description">
+              SOC é a sigla para Security Operations Center, ou Centro de
+              Operações de Segurança. Curso mostra como se preparar para
+              incidentes internos e externos de Malware, phishing, worm,
+              engenharia social, entre outros. E como dar a resposta para
+              incidentes já sofridos.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/13.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">SQL 2016</p>
+            <p class="card__description">
+              Curso completo utilizando SQL Server 2016 da microsoft, onde
+              ensina todas categorias do SQL: DQL, DML, DCL, DTL e DDL. E mais
+              conceito de constraints e funções build-in para strings, números,
+              data, hora, conversão e formatação.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/12.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">Análise de Negócio - BPM</p>
+            <p class="card__description">
+              Modelagem de processo de negócio, representação através de
+              diagramas UML e utilização de ferramentas DMAIC como: SIPOC, SWOT,
+              5W2H, Diagrama de Ishikawa e Diagrama de Pareto, Técnica Delphi e
+              análise de KPIs.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/10.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">Inbound Marketing</p>
+            <p class="card__description">
+              Inbound Marketing ou Marketing de Relacionamento é a técnica
+              utilizada por empresas que buscão estar sempre próximas ao que o
+              cliente pensa e acha sobre o produto. Sendo possível entender os
+              principios e valores do seu cliente e atrair novos clientes com o
+              mesmo perfil.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/9.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">HTML5 Fundamentos</p>
+            <p class="card__description">
+              Tags HTML5, árvore de elementos, atributos das tags, sêmantica e
+              SEO.
+            </p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="./static/assets/8.jpg" width="450px" alt="" />
+          <div class="card__content">
+            <p class="card__title">Introdução a POO</p>
+            <p class="card__description">
+              Conceitos de Classes, Objetos, Funções Nativas, Métodos e
+              Atributos de um Objeto, Herança, Polimorfismo e Encapsulamento.
+            </p>
+          </div>
+        </div>
       </section>
-      <section class="certificate">
-        <h2>Nome do Curso 3</h2>
-        <p>Instituição de Ensino: Nome da Instituição 3</p>
-        <p>Duração do Curso: 4 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 4</h2>
-        <p>Instituição de Ensino: Nome da Instituição 4</p>
-        <p>Duração do Curso: 5 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 5</h2>
-        <p>Instituição de Ensino: Nome da Instituição 5</p>
-        <p>Duração do Curso: 3 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 6</h2>
-        <p>Instituição de Ensino: Nome da Instituição 6</p>
-        <p>Duração do Curso: 6 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <div class="gallery">
-        <img src="certificate1.jpg" alt="Certificado 1" />
-        <img src="certificate2.jpg" alt="Certificado 2" />
-        <img src="certificate3.jpg" alt="Certificado 3" />
-        <img src="certificate4.jpg" alt="Certificado 4" />
-        <img src="certificate5.jpg" alt="Certificado 5" />
-        <img src="certificate6.jpg" alt="Certificado 6" />
-      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -142,11 +234,19 @@
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
       const navbar = document.getElementById('navbar');
+      const mainCertificates = document.getElementById(
+        'certificates-container'
+      );
+      const sectionCertificates = document.getElementById(
+        'certificates-section'
+      );
 
       theme.addEventListener('click', () => {
         header.classList.toggle('dark');
         footer.classList.toggle('dark');
         navbar.classList.toggle('dark');
+        mainCertificates.classList.toggle('dark');
+        sectionCertificates.classList.toggle('dark');
       });
     </script>
   </body>
