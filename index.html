@@ -1,175 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./static/template.css" />
-  <link rel="stylesheet" href="./static/index.css" />
-  <title>Página Inicial</title>
-</head>
-<body>
-  <div class="user-auth active"></div>
-  <header id="header" class="header">
-    <div class="logo-header">
-      <a href="./"
-        ><img
-          src="./static/assets/logo_dizer_dev.png"
-          alt="logo_diego_zerbini_dev"
-          height="50px"
-      /></a>
-      <h1>Diego Zerbini</h1>
-    </div>
-    <div class="title-header">
-      <h2>Desenvolvedor Web</h2>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./static/template.css" />
+    <link rel="stylesheet" href="./static/index.css" />
+    <title>Página Inicial</title>
+  </head>
+  <body>
+    <div class="user-auth active"></div>
+    <header id="header" class="header">
+      <div class="logo-header">
+        <a href="./"
+          ><img
+            src="./static/assets/logo_dizer_dev.png"
+            alt="logo_diego_zerbini_dev"
+            height="50px"
+        /></a>
+        <h1>Diego Zerbini</h1>
+      </div>
+      <div class="title-header">
+        <h2>Desenvolvedor Web</h2>
+      </div>
+    </header>
 
-  <nav id="navbar" class="navbar">
-    <ul class="links">
-      <li class="button-header"><a href="./about.html">Sobre mim</a></li>
-      <li class="button-header"><a href="./certificates.html">Certificados</a></li>
-      <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
-      <li class="button-header"><a href="./videos.html">Videos</a></li>
-      <li class="button-header"><a href="./articles.html">Artigos</a></li>
-      <li class="button-header"><a href="./contact.html">Contato</a></li>
-    </ul>
-    <label class="switch-theme">
-      <input type="checkbox" id="switch" />
-      <span class="slider-theme"></span>
-    </label>
-  </nav>
+    <nav id="navbar" class="navbar">
+      <ul class="links">
+        <li class="button-header"><a href="./about.html">Sobre mim</a></li>
+        <li class="button-header">
+          <a href="./certificates.html">Certificados</a>
+        </li>
+        <li class="button-header"><a href="./portfolio.html">Portfolio</a></li>
+        <li class="button-header"><a href="./videos.html">Videos</a></li>
+        <li class="button-header"><a href="./articles.html">Artigos</a></li>
+        <li class="button-header"><a href="./contact.html">Contato</a></li>
+      </ul>
+      <label class="switch-theme">
+        <input type="checkbox" id="switch" onclick="toggleMode()" />
+        <span class="slider-theme"></span>
+      </label>
+    </nav>
 
-  <main>
-    <section id="home-container" class="home-container">
-      <h1 id="title-home" class="title-home">Seja bem-vindo!</h1>
-      <div class="logo-home">
-        <div class="main-img">
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
-          <span class="circle"></span>
+    <main>
+      <section id="home-container" class="home-container">
+        <h1 id="title-home" class="title-home">Seja bem-vindo!</h1>
+        <div class="logo-home">
+          <div class="main-img">
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+            <span class="circle"></span>
+          </div>
+          <img src="./static/assets/logo_dizer_dev.png" alt="dizerdev" />
         </div>
-        <img src="./static/assets/logo_dizer_dev.png" alt="dizerdev"></img>
+      </section>
+
+      <section id="main-section" class="main-section">
+        <h2 class="h2-card-home">
+          <img
+            src="./static/assets/project-icon.png"
+            alt="logo-github"
+          />Projetos realizados
+        </h2>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Next Shopping Cart<a
+              href="https://github.com/dizerdev/next-shopping-cart"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+          <iframe
+            class="iframe"
+            src="https://next-shopping-cart-one.vercel.app/"
+            frameborder="0"
+          ></iframe>
+          <p>
+            A interface de um e-commerce inspirada no layout da Amazon. É um
+            site com páginas dinâmicas desenvolvido em Next.js, um framework
+            Java Script que utiliza a bliblioteca React.
+          </p>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Todo List<a
+              href="https://github.com/dizerdev/todo-list"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+          <iframe
+            class="iframe"
+            src="https://dizerdev.github.io/todo-list/"
+            frameborder="0"
+          ></iframe>
+          <p>
+            Site estático para cadastrar lista de tarefas diárias, com um
+            relógio.
+          </p>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Speedometer<a
+              href="https://github.com/dizerdev/speedometer"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+          <iframe
+            class="iframe"
+            src="https://dizerdev.github.io/speedometer/"
+            frameborder="0"
+          ></iframe>
+          <p>
+            Projeto para capturar através de Geo Localização, a velocidade do
+            usuário e armazenar em um histórico que imprime um mapa com o
+            trajeto realizado.
+          </p>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Desafio técnico<a
+              href="https://github.com/dizerdev/desafio-ig"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+          <iframe
+            class="iframe"
+            src="https://dizerdev.github.io/desafio-ig/"
+            frameborder="0"
+          ></iframe>
+          <p>
+            Projeto desenvolvido para atender 7 demandas, sendo a primeira o
+            layout e as demais conforme cada um dos cards.
+          </p>
+        </div>
+
+        <h1 class="more-h1">Mais em breve...</h1>
+      </section>
+
+      <script>
+        const toggle = document.querySelector('.main-img');
+        toggle.addEventListener('click', () => {
+          toggle.classList.toggle('active');
+        });
+      </script>
+    </main>
+    <!-------------------------------------------------------------------->
+    <footer id="footer" class="footer">
+      <div class="contact-info">
+        <p>Telefone: (11) 98692-1165</p>
+        <p>Email: zerbiniprogramador@gmail.com</p>
       </div>
-    </section>
-
-    <section id="main-section" class="main-section">
-      <h2 class="h2-card-home"><img src="./static/assets/project-icon.png" alt="logo-github">Projetos realizados</h2>
-
-      <div class="product-card">
-        <h3 class="h3-card-home">Next Shopping Cart<a href="https://github.com/dizerdev/next-shopping-cart" target="_blank"
-          rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github"></a></h3>
-        <iframe
-          class="iframe"
-          src="https://next-shopping-cart-one.vercel.app/"
-          frameborder="0"
-        ></iframe>
-        <p>
-          A interface de um e-commerce inspirada no layout da Amazon. É um site com
-          páginas dinâmicas desenvolvido em Next.js, um framework Java Script que
-          utiliza a bliblioteca React.
-        </p>
+      <div class="social-links">
+        <a
+          href="https://github.com/dizerdev"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="./static/assets/github-icon.png" alt="Github"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/dizerdev/"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="./static/assets/linkedin-icon.png" alt="Linkedin"
+        /></a>
+        <a
+          href="https://wa.me/message/MTG3FKJWBA53L1"
+          target="_blank"
+          rel="noreferrer noopener"
+          ><img src="./static/assets/whatsapp-icon.png" alt="Instagram"
+        /></a>
       </div>
+    </footer>
 
-      <div class="product-card">
-        <h3 class="h3-card-home">Todo List<a href="https://github.com/dizerdev/todo-list" target="_blank"
-          rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github"></a></h3>
-        <iframe
-          class="iframe"
-          src="https://dizerdev.github.io/todo-list/"
-          frameborder="0"
-        ></iframe>
-        <p>
-          Site estático para cadastrar lista de tarefas diárias, com um relógio.
-        </p>
-      </div>
+    <script defer>
+      // Função para mudar o modo e armazenar o estado
+      function toggleMode() {
+        // Se o modo atual for 'dark', alterne para '' e vice-versa
+        const currentMode = document.body.classList.contains('dark')
+          ? ''
+          : 'dark';
+        const elementsToToggle = [
+          'header',
+          'footer',
+          'navbar',
+          'main-section',
+          'home-container',
+          'title-home',
+        ];
 
-      <div class="product-card">
-        <h3 class="h3-card-home">Speedometer<a href="https://github.com/dizerdev/speedometer" target="_blank"
-          rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github"></a></h3>
-        <iframe
-          class="iframe"
-          src="https://dizerdev.github.io/speedometer/"
-          frameborder="0"
-        ></iframe>
-        <p>
-          Projeto para capturar através de Geo Localização, a velocidade do usuário
-          e armazenar em um histórico que imprime um mapa com o trajeto realizado.
-        </p>
-      </div>
+        elementsToToggle.forEach((elementId) => {
+          const element = document.getElementById(elementId);
+          if (element) {
+            element.classList.toggle('dark');
+            console.log('tentei alterar');
+          }
+        });
 
-      <div class="product-card">
-        <h3 class="h3-card-home">Desafio técnico<a href="https://github.com/dizerdev/desafio-ig" target="_blank"
-          rel="noreferrer noopener"><img src="./static/assets/github-icon.png" alt="logo-github"></a></h3>
-        <iframe
-          class="iframe"
-          src="https://dizerdev.github.io/desafio-ig/"
-          frameborder="0"
-        ></iframe>
-        <p>
-          Projeto desenvolvido para atender 7 demandas, sendo a primeira o layout e
-          as demais conforme cada um dos cards.
-        </p>
-      </div>
+        // Armazene o estado do modo no localStorage
+        localStorage.setItem('mode', currentMode);
+      }
 
-      <h1 class="more-h1">Mais em breve...</h1>
-    </section>
+      // Verifique o localStorage ao carregar a página para definir o modo
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedMode = localStorage.getItem('mode');
+        if (savedMode) {
+          // Adiciona a classe ao corpo
+          document.body.classList.add(savedMode);
+          const theme = document.getElementById('switch');
+          // Adiciona a classe aos elementos específicos
+          const elementsToToggle = [
+            'header',
+            'footer',
+            'navbar',
+            'main-section',
+            'home-container',
+            'title-home',
+          ];
 
-    <script>
-      const toggle = document.querySelector('.main-img');
-      toggle.addEventListener('click', ()=>{
-        toggle.classList.toggle('active')
-      })
+          // Verifica saveMode para a checkbox
+          if (savedMode == '') {
+            theme.checked = false;
+          } else {
+            theme.checked = true;
+          }
+          elementsToToggle.forEach((elementId) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+              element.classList.add(savedMode);
+            }
+          });
+        }
+      });
     </script>
-  </main>
-<!-------------------------------------------------------------------->
-  <footer id="footer" class="footer">
-    <div class="contact-info">
-      <p>Telefone: (11) 98692-1165</p>
-      <p>Email: zerbiniprogramador@gmail.com</p>
-    </div>
-    <div class="social-links">
-      <a
-        href="https://github.com/dizerdev"
-        target="_blank"
-        rel="noreferrer noopener"
-        ><img src="./static/assets/github-icon.png" alt="Github"
-      /></a>
-      <a
-        href="https://www.linkedin.com/in/dizerdev/"
-        target="_blank"
-        rel="noreferrer noopener"
-        ><img src="./static/assets/linkedin-icon.png" alt="Linkedin"
-      /></a>
-      <a
-        href="https://wa.me/message/MTG3FKJWBA53L1"
-        target="_blank"
-        rel="noreferrer noopener"
-        ><img src="./static/assets/whatsapp-icon.png" alt="Instagram"
-      /></a>
-    </div>
-  </footer>
-  <script defer>
-    const theme = document.getElementById('switch');
-    const header = document.getElementById('header');
-    const footer = document.getElementById('footer');
-    const navbar = document.getElementById('navbar');
-    const mainSecton = document.getElementById('main-section');
-    const homeContainer = document.getElementById('home-container');
-    const titleHome = document.getElementById('title-home');
-
-    theme.addEventListener('click', () => {
-      header.classList.toggle('dark');
-      footer.classList.toggle('dark');
-      navbar.classList.toggle('dark');
-      mainSecton.classList.toggle('dark');
-      homeContainer.classList.toggle('dark');
-      titleHome.classList.toggle('dark');
-    });
-  </script>
-</body>
+  </body>
 </html>
