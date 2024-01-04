@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./static/template.css" />
 
     <link rel="stylesheet" href="./static/portfolio.css" />
-
     <title>Portfolio</title>
   </head>
   <body>
@@ -25,6 +24,7 @@
         <h2>Desenvolvedor Web</h2>
       </div>
     </header>
+
     <nav id="navbar" class="navbar">
       <ul class="links">
         <li class="button-header">
@@ -40,46 +40,166 @@
         <li class="button-header"><a href="./articles.html">Artigos</a></li>
         <li class="button-header"><a href="./contact.html">Contato</a></li>
       </ul>
-      <label class="switch-theme">
+      <label class="switch-theme" onclick="toggleMode()">
         <input type="checkbox" id="switch" />
         <span class="slider-theme"></span>
       </label>
     </nav>
+
     <main>
-      <section class="gallery">
-        <h2>Galeria de Imagens</h2>
-        <div class="image-gallery">
-          <!-- Inclua suas imagens aqui -->
-          <img src="image1.jpg" alt="Imagem 1" />
-          <img src="image2.jpg" alt="Imagem 2" />
-          <img src="image3.jpg" alt="Imagem 3" />
-        </div>
-      </section>
+      <section id="main-section" class="main-section">
+        <h2 class="h2-card-home">
+          <img
+            src="./static/assets/repository-icon.jpg"
+            alt="logo-github"
+          />Repositórios
+        </h2>
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Django Project
+            <a
+              href="https://github.com/dizerdev/projeto-django"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
 
-      <section class="about">
-        <h2>Sobre Mim</h2>
-        <div class="about-content">
-          <img src="your_photo.jpg" alt="Sua Foto" />
-          <p>Adicione uma descrição sobre você aqui.</p>
+          <ul>
+            <strong>Aplicação Django:</strong>
+            <li>Desenvolvida em ambiente <strong>Linux</strong></li>
+            <li>
+              Elementos construidos através de <strong>componentes</strong>
+            </li>
+            <li>
+              Back-end contruido com
+              <strong>Django Rest Framework (DRF)</strong>
+            </li>
+          </ul>
         </div>
-      </section>
 
-      <section class="portfolio-list">
-        <h2>Meu Portfólio</h2>
-        <ul>
-          <li>
-            <button class="toggle-button">Projeto 1</button>
-            <p class="toggle-content">Descrição do Projeto 1.</p>
-          </li>
-          <li>
-            <button class="toggle-button">Projeto 2</button>
-            <p class="toggle-content">Descrição do Projeto 2.</p>
-          </li>
-          <li>
-            <button class="toggle-button">Projeto 3</button>
-            <p class="toggle-content">Descrição do Projeto 3.</p>
-          </li>
-        </ul>
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Python Library
+            <a
+              href="https://github.com/dizerdev/py-lib"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+
+          <ul>
+            <strong>Biblioteca Python com:</strong>
+            <li>
+              Códigos para desenvolvimento de APIs e Micros-serviços utilizando
+              a biblioteca <strong>Flask</strong>
+            </li>
+            <li>
+              Códigos no paradigma de
+              <strong>Programação Orientada a Objetos</strong>
+            </li>
+            <li>
+              Códigos de scripts <strong>SQL</strong> e <strong>T-SQL</strong>
+            </li>
+            <li>
+              Código de um CRUD em <strong>Flask</strong>,
+              <strong>PostgreSQL</strong> e suas dependências
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Algorithms Python
+            <a
+              href="https://github.com/dizerdev/algoritmos-python"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+
+          <ul>
+            <strong>Algoritmos Python com:</strong>
+            <li>
+              Algoritmos de busca em grafos para <strong>busca gulosa</strong>,
+              <strong>busca à estrela</strong> e
+              <strong>pesquisa binária</strong>
+            </li>
+            <li>
+              Algoritmo para ordenação de vetor utilizando a biblioteca
+              <strong>numpy</strong>
+            </li>
+            <li>
+              Algoritmo para aplicação de Lógica Fuzzy utilizando biblioteca
+              <strong>skfuzzy</strong>
+            </li>
+            <li>
+              Algoritmos de otimização utilizando a biblioteca
+              <strong>mlrose</strong>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            PHP7 Library
+            <a
+              href="https://github.com/dizerdev/php-lib"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+
+          <ul>
+            <strong>Biblioteca PHP7 com:</strong>
+            <li>
+              Códigos sobre o básico da linguagem com sintaxe, variáveis e
+              operadores
+            </li>
+            <li>Códigos para auxiliar na Programação Orientada a Objetos</li>
+            <li>Códigos de consulta SQL e T-SQL</li>
+            <li>
+              Códigos de um CRUD utilizando PostgreSQL e suas dependências
+            </li>
+          </ul>
+        </div>
+
+        <div class="product-card">
+          <h3 class="h3-card-home">
+            Python Library
+            <a
+              href="https://github.com/dizerdev/py-lib"
+              target="_blank"
+              rel="noreferrer noopener"
+              ><img src="./static/assets/github-icon.png" alt="logo-github"
+            /></a>
+          </h3>
+
+          <ul>
+            Biblioteca Python para com:
+            <li>
+              Códigos para desenvolvimento de APIs e Micros-serviços utilizando
+              a biblioteca Flask.
+            </li>
+            <li>Códigos para auxiliar na Programação Orientada a Objetos</li>
+            <li>Códigos de consulta SQL e T-SQL</li>
+            <li>
+              Códigos de um CRUD utilizando PostgreSQL e suas dependências
+            </li>
+          </ul>
+        </div>
+
+        <h1 class="more-h1">
+          Contribuições
+          <img
+            class="ghchart"
+            src="https://ghchart.rshah.org/dizerdev"
+            alt="Gráfico de Contribuições GitHub"
+          />
+        </h1>
       </section>
     </main>
 
@@ -111,15 +231,81 @@
       </div>
     </footer>
     <script defer>
+      // Função para mudar o modo e armazenar o estado
+      function toggleMode() {
+        // Se o modo atual for 'dark', alterne para 'light' e vice-versa
+        const currentMode = document.body.classList.contains('dark')
+          ? ''
+          : 'dark';
+        const elementsToToggle = [
+          'header',
+          'footer',
+          'navbar',
+          'certificates-container',
+          'certificates-section',
+        ];
+
+        elementsToToggle.forEach((elementId) => {
+          const element = document.getElementById(elementId);
+          if (element) {
+            element.classList.toggle('dark');
+            console.log('tentei alterar');
+          }
+        });
+
+        // Armazene o estado do modo no localStorage
+        localStorage.setItem('mode', currentMode);
+      }
+
+      // Verifique o localStorage ao carregar a página para definir o modo
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedMode = localStorage.getItem('mode');
+        if (savedMode) {
+          // Adiciona a classe ao corpo
+          document.body.classList.add(savedMode);
+          const theme = document.getElementById('switch');
+          // Adiciona a classe aos elementos específicos
+          const elementsToToggle = [
+            'header',
+            'footer',
+            'navbar',
+            'certificates-container',
+            'container-about',
+            'certificates-section',
+          ];
+
+          // Verifica saveMode para a checkbox
+          if (savedMode == '') {
+            theme.checked = false;
+          } else {
+            theme.checked = true;
+          }
+          elementsToToggle.forEach((elementId) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+              element.classList.add(savedMode);
+            }
+          });
+        }
+      });
+
       const theme = document.getElementById('switch');
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
       const navbar = document.getElementById('navbar');
+      const mainCertificates = document.getElementById(
+        'certificates-container'
+      );
+      const sectionCertificates = document.getElementById(
+        'certificates-section'
+      );
 
       theme.addEventListener('click', () => {
         header.classList.toggle('dark');
         footer.classList.toggle('dark');
         navbar.classList.toggle('dark');
+        mainCertificates.classList.toggle('dark');
+        sectionCertificates.classList.toggle('dark');
       });
     </script>
   </body>

@@ -187,7 +187,6 @@ input:checked + .slider-theme:before {
   padding: 10px 20px;
   position: relative;
   bottom: 0;
-  min-width: 100vh;
 }
 
 .footer.dark {
