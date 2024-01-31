@@ -1,3 +1,7 @@
+.main-container.dark {
+  background-color: #1c1c1c;
+  color: #fff;
+}
 .product-card {
   border: 1px solid #ddd;
   border-radius: 5px;
@@ -14,7 +18,7 @@
   padding-top: 10px;
 }
 
-.h2-card-home.dark {
+.h2-card-home {
   color: #fff;
 }
 

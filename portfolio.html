@@ -46,7 +46,7 @@
       </label>
     </nav>
 
-    <main>
+    <main id="main-container" class="main-container">
       <section id="main-section" class="main-section">
         <h2 class="h2-card-home">
           <img
@@ -236,8 +236,7 @@
           'header',
           'footer',
           'navbar',
-          'certificates-container',
-          'certificates-section',
+          'main-container',
         ];
 
         elementsToToggle.forEach((elementId) => {
@@ -264,9 +263,7 @@
             'header',
             'footer',
             'navbar',
-            'certificates-container',
-            'container-about',
-            'certificates-section',
+            'main-container',
           ];
 
           // Verifica saveMode para a checkbox
@@ -288,18 +285,13 @@
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
       const navbar = document.getElementById('navbar');
-      const mainCertificates = document.getElementById(
-        'certificates-container'
-      );
-      const sectionCertificates = document.getElementById(
-        'certificates-section'
-      );
+      const mainPortfolio = document.getElementById('main-container');
 
       theme.addEventListener('click', () => {
         header.classList.toggle('dark');
         footer.classList.toggle('dark');
         navbar.classList.toggle('dark');
-        mainCertificates.classList.toggle('dark');
+        mainPortfolio.classList.toggle('dark');
         sectionCertificates.classList.toggle('dark');
       });
     </script>
