@@ -47,69 +47,7 @@
     </nav>
     <main>
       <div>
-        <section class="certificate">
-          <h2>Nome do Curso 1</h2>
-          <p>Instituição de Ensino: Nome da Instituição 1</p>
-          <p>Duração do Curso: 6 meses</p>
-          <p>
-            Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-            consectetur adipiscing elit.
-          </p>
-        </section>
-      </div>
-      <section class="certificate">
-        <h2>Nome do Curso 2</h2>
-        <p>Instituição de Ensino: Nome da Instituição 2</p>
-        <p>Duração do Curso: 3 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 3</h2>
-        <p>Instituição de Ensino: Nome da Instituição 3</p>
-        <p>Duração do Curso: 4 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 4</h2>
-        <p>Instituição de Ensino: Nome da Instituição 4</p>
-        <p>Duração do Curso: 5 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 5</h2>
-        <p>Instituição de Ensino: Nome da Instituição 5</p>
-        <p>Duração do Curso: 3 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <section class="certificate">
-        <h2>Nome do Curso 6</h2>
-        <p>Instituição de Ensino: Nome da Instituição 6</p>
-        <p>Duração do Curso: 6 meses</p>
-        <p>
-          Breve explicação sobre o curso: Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
-        </p>
-      </section>
-      <div class="gallery">
-        <img src="certificate1.jpg" alt="Certificado 1" />
-        <img src="certificate2.jpg" alt="Certificado 2" />
-        <img src="certificate3.jpg" alt="Certificado 3" />
-        <img src="certificate4.jpg" alt="Certificado 4" />
-        <img src="certificate5.jpg" alt="Certificado 5" />
-        <img src="certificate6.jpg" alt="Certificado 6" />
-      </div>
+        <h1>Em breve...</h1>
     </main>
 
     <footer id="footer" class="footer">
@@ -140,6 +78,61 @@
       </div>
     </footer>
     <script defer>
+      // Função para mudar o modo e armazenar o estado
+      function toggleMode() {
+        // Se o modo atual for 'dark', alterne para 'light' e vice-versa
+        const currentMode = document.body.classList.contains('dark')
+          ? ''
+          : 'dark';
+        const elementsToToggle = [
+          'header',
+          'footer',
+          'navbar',
+          'main-container',
+        ];
+
+        elementsToToggle.forEach((elementId) => {
+          const element = document.getElementById(elementId);
+          if (element) {
+            element.classList.toggle('dark');
+            console.log('tentei alterar');
+          }
+        });
+
+        // Armazene o estado do modo no localStorage
+        localStorage.setItem('mode', currentMode);
+      }
+
+      // Verifique o localStorage ao carregar a página para definir o modo
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedMode = localStorage.getItem('mode');
+        if (savedMode) {
+          // Adiciona a classe ao corpo
+          document.body.classList.add(savedMode);
+          const theme = document.getElementById('switch');
+          // Adiciona a classe aos elementos específicos
+          const elementsToToggle = [
+            'header',
+            'footer',
+            'navbar',
+            'main-container',
+          ];
+
+          // Verifica saveMode para a checkbox
+          if (savedMode == '') {
+            theme.checked = false;
+          } else {
+            theme.checked = true;
+          }
+          elementsToToggle.forEach((elementId) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+              element.classList.add(savedMode);
+            }
+          });
+        }
+      });
+      
       const theme = document.getElementById('switch');
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');

@@ -46,7 +46,7 @@
       </label>
     </nav>
     <main>
-      <h1>Contato</h1>
+      <h1>Em breve...</h1>
     </main>
 
     <footer id="footer" class="footer">
@@ -77,6 +77,60 @@
       </div>
     </footer>
     <script defer>
+      // Função para mudar o modo e armazenar o estado
+      function toggleMode() {
+        // Se o modo atual for 'dark', alterne para 'light' e vice-versa
+        const currentMode = document.body.classList.contains('dark')
+          ? ''
+          : 'dark';
+        const elementsToToggle = [
+          'header',
+          'footer',
+          'navbar',
+          'main-container',
+        ];
+
+        elementsToToggle.forEach((elementId) => {
+          const element = document.getElementById(elementId);
+          if (element) {
+            element.classList.toggle('dark');
+            console.log('tentei alterar');
+          }
+        });
+
+        // Armazene o estado do modo no localStorage
+        localStorage.setItem('mode', currentMode);
+      }
+
+      // Verifique o localStorage ao carregar a página para definir o modo
+      document.addEventListener('DOMContentLoaded', function () {
+        const savedMode = localStorage.getItem('mode');
+        if (savedMode) {
+          // Adiciona a classe ao corpo
+          document.body.classList.add(savedMode);
+          const theme = document.getElementById('switch');
+          // Adiciona a classe aos elementos específicos
+          const elementsToToggle = [
+            'header',
+            'footer',
+            'navbar',
+            'main-container',
+          ];
+
+          // Verifica saveMode para a checkbox
+          if (savedMode == '') {
+            theme.checked = false;
+          } else {
+            theme.checked = true;
+          }
+          elementsToToggle.forEach((elementId) => {
+            const element = document.getElementById(elementId);
+            if (element) {
+              element.classList.add(savedMode);
+            }
+          });
+        }
+      });
       const theme = document.getElementById('switch');
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
