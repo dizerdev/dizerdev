@@ -45,9 +45,98 @@
         <span class="slider-theme"></span>
       </label>
     </nav>
-    <main>
-      <div>
-        <h1>Em breve...</h1>
+    <main id="main-container" class="main-container">
+      <section id="main-section" class="main-section">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/E9ZNcF58vbM?si=YM_VZwOy6EFDKrad"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HSpCZhTotkg?si=Zealp_pi_Qfn0tYQ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/GQVMRGHF0iI?si=Ucs_LiB4n3veT-hi"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/aVz-6-C87SA?si=AGVSnXjAzJRT0VFg"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/6K2F-4iv0rQ?si=QamuxEh8LpywokW6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/vWRJxAoljE8?si=_9Z9MXg4rc-qozgn"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/_ou53IUcjk0?si=JY9ZgtZtdgwgiM9x"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HMzVRPP7Rng?si=DA4SqnMs5y4vmIuJ"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8a05GF0V_oc?si=kqPjn8Xf8XIgYrXj"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </section>
     </main>
 
     <footer id="footer" class="footer">
@@ -84,12 +173,7 @@
         const currentMode = document.body.classList.contains('dark')
           ? ''
           : 'dark';
-        const elementsToToggle = [
-          'header',
-          'footer',
-          'navbar',
-          'main-container',
-        ];
+        const elementsToToggle = ['header', 'footer', 'navbar', 'main-section'];
 
         elementsToToggle.forEach((elementId) => {
           const element = document.getElementById(elementId);
@@ -115,7 +199,7 @@
             'header',
             'footer',
             'navbar',
-            'main-container',
+            'main-section',
           ];
 
           // Verifica saveMode para a checkbox
@@ -132,16 +216,18 @@
           });
         }
       });
-      
+
       const theme = document.getElementById('switch');
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
       const navbar = document.getElementById('navbar');
+      const mainVideos = document.getElementById('main-section');
 
       theme.addEventListener('click', () => {
         header.classList.toggle('dark');
         footer.classList.toggle('dark');
         navbar.classList.toggle('dark');
+        mainVideos.classList.toggle('dark');
       });
     </script>
   </body>
