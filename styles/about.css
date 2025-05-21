@@ -1,0 +1,88 @@
+.about-hero {
+  background: linear-gradient(135deg, #005fa3 0%, #0077cc 100%);
+  color: #fff;
+  padding: 6rem 1rem 4rem;
+  text-align: center;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.about-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1.5px;
+}
+
+.about-hero p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.about-content {
+  padding: 3rem 1rem 5rem;
+  color: #222;
+}
+
+.about-content h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #0077cc;
+  padding-bottom: 0.3rem;
+  letter-spacing: 1px;
+}
+
+.about-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #0077cc;
+}
+
+.skills-list li {
+  background: #e1f0ff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: default;
+}
+
+.skills-list li:hover {
+  background-color: #0077cc;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+/* Animação fadeInUp */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Link styles */
+.about-content a {
+  color: #0077cc;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.about-content a:hover,
+.about-content a:focus {
+  color: #005fa3;
+  outline: none;
+}

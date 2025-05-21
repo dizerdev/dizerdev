@@ -1,0 +1,103 @@
+.site-header {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.site-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #222;
+  letter-spacing: 1px;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-menu a {
+  font-weight: 500;
+  position: relative;
+  padding: 0.25rem 0;
+}
+
+.nav-menu a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background-color: #0077cc;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.nav-menu a:hover::after,
+.nav-menu a:focus::after {
+  width: 100%;
+}
+
+.site-footer {
+  background-color: #222;
+  color: #eee;
+  padding: 1.5rem 0;
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.site-footer .social-links a {
+  color: #eee;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.site-footer .social-links a:hover {
+  color: #0077cc;
+}
+
+/* Hero / welcome section */
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 4rem;
+  background: linear-gradient(135deg, #0077cc 0%, #005fa3 100%);
+  color: #fff;
+  animation: fadeIn 1s ease forwards;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.4;
+  opacity: 0.85;
+}
+
+/* Animação fadeIn */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
