@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./static/template.css" />
-
-    <link rel="stylesheet" href="./static/index.css" />
-
-    <title>Página Inicial</title>
+    <link rel="stylesheet" href="./static/articles.css" />
+    <title>Artigos - Diego Santos Dev</title>
   </head>
   <body>
     <div class="user-auth active"></div>
@@ -16,13 +14,13 @@
         <a href="./"
           ><img
             src="./static/assets/logo_dizer_dev.png"
-            alt="logo_diego_zerbini_dev"
+            alt="logo_diego_santos_dev"
             height="50px"
         /></a>
-        <h1>Diego Zerbini</h1>
+        <h1>Diego Santos Dev</h1>
       </div>
       <div class="title-header">
-        <h2>Desenvolvedor Web</h2>
+        <h2>Software Engineer</h2>
       </div>
     </header>
     <nav id="navbar" class="navbar">
@@ -41,12 +39,166 @@
         <li class="button-header"><a href="./contact.html">Contato</a></li>
       </ul>
       <label class="switch-theme">
-        <input type="checkbox" id="switch" />
+        <input type="checkbox" id="switch" onclick="toggleMode()" />
         <span class="slider-theme"></span>
       </label>
     </nav>
-    <main>
-      <h1>Em breve...</h1>
+    <main id="main-articles">
+      <div id="container-articles" class="container-articles">
+        <h1>Artigos Técnicos</h1>
+        <p class="intro-text">
+          Compartilho aqui conhecimentos e experiências sobre desenvolvimento
+          web, tecnologias modernas e boas práticas de programação.
+        </p>
+
+        <div class="articles-grid">
+          <article class="article-card">
+            <div class="article-header">
+              <h2>Introdução ao React.js: Componentes e Props</h2>
+              <span class="article-date">15 de Janeiro, 2025</span>
+            </div>
+            <div class="article-content">
+              <p>
+                React.js revolucionou a forma como desenvolvemos interfaces de
+                usuário. Neste artigo, exploramos os conceitos fundamentais de
+                componentes e props, demonstrando como criar aplicações mais
+                modulares e reutilizáveis.
+              </p>
+              <div class="article-tags">
+                <span class="tag">React</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Frontend</span>
+              </div>
+            </div>
+            <div class="article-footer">
+              <a href="#" class="read-more">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-header">
+              <h2>Next.js: Server-Side Rendering e Performance</h2>
+              <span class="article-date">08 de Janeiro, 2025</span>
+            </div>
+            <div class="article-content">
+              <p>
+                O Next.js oferece recursos poderosos para otimização de
+                performance, incluindo SSR, SSG e ISR. Descubra como implementar
+                essas técnicas para criar aplicações web mais rápidas e
+                eficientes.
+              </p>
+              <div class="article-tags">
+                <span class="tag">Next.js</span>
+                <span class="tag">SSR</span>
+                <span class="tag">Performance</span>
+              </div>
+            </div>
+            <div class="article-footer">
+              <a href="#" class="read-more">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-header">
+              <h2>Integração de APIs REST com JavaScript</h2>
+              <span class="article-date">22 de Dezembro, 2024</span>
+            </div>
+            <div class="article-content">
+              <p>
+                Aprenda as melhores práticas para consumir APIs REST em
+                aplicações JavaScript. Cobrimos desde fetch básico até
+                tratamento de erros e implementação de cache.
+              </p>
+              <div class="article-tags">
+                <span class="tag">API</span>
+                <span class="tag">REST</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+            <div class="article-footer">
+              <a href="#" class="read-more">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-header">
+              <h2>CSS Grid vs Flexbox: Quando usar cada um</h2>
+              <span class="article-date">15 de Dezembro, 2024</span>
+            </div>
+            <div class="article-content">
+              <p>
+                Uma comparação prática entre CSS Grid e Flexbox, com exemplos
+                reais de quando aplicar cada tecnologia para criar layouts
+                responsivos e eficientes.
+              </p>
+              <div class="article-tags">
+                <span class="tag">CSS</span>
+                <span class="tag">Grid</span>
+                <span class="tag">Flexbox</span>
+              </div>
+            </div>
+            <div class="article-footer">
+              <a href="#" class="read-more">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-header">
+              <h2>Gerenciamento de Estado com Context API</h2>
+              <span class="article-date">01 de Dezembro, 2024</span>
+            </div>
+            <div class="article-content">
+              <p>
+                Explore como usar a Context API do React para gerenciar estado
+                global em aplicações de médio porte, evitando prop drilling e
+                mantendo o código limpo.
+              </p>
+              <div class="article-tags">
+                <span class="tag">React</span>
+                <span class="tag">Context API</span>
+                <span class="tag">Estado</span>
+              </div>
+            </div>
+            <div class="article-footer">
+              <a href="#" class="read-more">Ler mais</a>
+            </div>
+          </article>
+
+          <article class="article-card">
+            <div class="article-header">
+              <h2>Otimização de Performance em Aplicações Web</h2>
+              <span class="article-date">18 de Novembro, 2024</span>
+            </div>
+            <div class="article-content">
+              <p>
+                Técnicas essenciais para otimizar a performance de aplicações
+                web, incluindo lazy loading, code splitting, compressão de
+                imagens e cache strategies.
+              </p>
+              <div class="article-tags">
+                <span class="tag">Performance</span>
+                <span class="tag">Otimização</span>
+                <span class="tag">Web</span>
+              </div>
+            </div>
+            <div class="article-footer">
+              <a href="#" class="read-more">Ler mais</a>
+            </div>
+          </article>
+        </div>
+
+        <div class="newsletter-section">
+          <h3>Receba novos artigos por email</h3>
+          <p>
+            Inscreva-se para receber notificações sobre novos artigos e
+            conteúdos técnicos.
+          </p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu email" required />
+            <button type="submit">Inscrever-se</button>
+          </form>
+        </div>
+      </div>
     </main>
 
     <footer id="footer" class="footer">
@@ -71,15 +223,14 @@
           href="https://wa.me/message/MTG3FKJWBA53L1"
           target="_blank"
           rel="noreferrer noopener"
-          ><img src="./static/assets/whatsapp-icon.png" alt="Instagram"
+          ><img src="./static/assets/whatsapp-icon.png" alt="WhatsApp"
         /></a>
-        <!-- Adicione mais links para redes sociais conforme necessário -->
       </div>
     </footer>
+
     <script defer>
       // Função para mudar o modo e armazenar o estado
       function toggleMode() {
-        // Se o modo atual for 'dark', alterne para 'light' e vice-versa
         const currentMode = document.body.classList.contains('dark')
           ? ''
           : 'dark';
@@ -87,18 +238,17 @@
           'header',
           'footer',
           'navbar',
-          'main-container',
+          'main-articles',
+          'container-articles',
         ];
 
         elementsToToggle.forEach((elementId) => {
           const element = document.getElementById(elementId);
           if (element) {
             element.classList.toggle('dark');
-            console.log('tentei alterar');
           }
         });
 
-        // Armazene o estado do modo no localStorage
         localStorage.setItem('mode', currentMode);
       }
 
@@ -106,18 +256,16 @@
       document.addEventListener('DOMContentLoaded', function () {
         const savedMode = localStorage.getItem('mode');
         if (savedMode) {
-          // Adiciona a classe ao corpo
           document.body.classList.add(savedMode);
           const theme = document.getElementById('switch');
-          // Adiciona a classe aos elementos específicos
           const elementsToToggle = [
             'header',
             'footer',
             'navbar',
-            'main-container',
+            'main-articles',
+            'container-articles',
           ];
 
-          // Verifica saveMode para a checkbox
           if (savedMode == '') {
             theme.checked = false;
           } else {
@@ -130,16 +278,6 @@
             }
           });
         }
-      });
-      const theme = document.getElementById('switch');
-      const header = document.getElementById('header');
-      const footer = document.getElementById('footer');
-      const navbar = document.getElementById('navbar');
-
-      theme.addEventListener('click', () => {
-        header.classList.toggle('dark');
-        footer.classList.toggle('dark');
-        navbar.classList.toggle('dark');
       });
     </script>
   </body>
