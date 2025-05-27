@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./static/template.css" />
-
     <link rel="stylesheet" href="./static/portfolio.css" />
     <title>Portfolio</title>
   </head>
@@ -46,155 +45,125 @@
       </label>
     </nav>
 
-    <main id="main-container" class="main-container">
-      <section id="main-section" class="main-section">
-        <h2 class="h2-card-home">
-          <img
-            src="./static/assets/repository-icon.jpg"
-            alt="logo-github"
-          />Repositórios
+    <main class="main">
+      <section class="main-container" id="main-container">
+        <h2 class="section-title">
+          <img src="./static/assets/repository-icon.jpg" alt="Ícone GitHub" />
+          Repositórios
         </h2>
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Django Project
-            <a
-              href="https://github.com/dizerdev/projeto-django"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
 
-          <ul>
-            <strong>Aplicação Django:</strong>
-            <li>Desenvolvida em ambiente <strong>Linux</strong></li>
-            <li>
-              Elementos construidos através de <strong>componentes</strong>
-            </li>
-            <li>
-              Back-end contruido com
-              <strong>Django Rest Framework (DRF)</strong>
-            </li>
-          </ul>
+        <div class="card-grid">
+          <!-- Card 1 -->
+          <article class="product-card">
+            <header class="card-header">
+              <h3>Ecommerce Model</h3>
+              <a
+                href="https://github.com/dizerdev/ecommercemodel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+              </a>
+            </header>
+            <p>
+              Plataforma de ecommerce construída com Next.js v15, React v19 e
+              estilização via Tailwind CSS v4. Integra com Stripe e PayPal para
+              pagamentos online e utiliza bibliotecas como Shadcn/ui para UI
+              moderna e responsiva. Inicialmente baseada em MongoDB com
+              Mongoose, está sendo migrada para PostgreSQL com Node Postgres.
+              Possui painel administrativo para gerenciamento de produtos,
+              pedidos, usuários e conteúdo do site. Foco em arquitetura moderna
+              com tecnologias atualizadas e boa experiência para o usuário final
+              e administradores.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="product-card">
+            <header class="card-header">
+              <h3>Flask Ecommerce API</h3>
+              <a
+                href="https://github.com/dizerdev/ecommerce-api"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+              </a>
+            </header>
+            <p>
+              API de ecommerce desenvolvida com Flask, estruturada em
+              arquitetura RESTful e escrita em Python 3. Inclui endpoints
+              completos para autenticação, cadastro e gestão de usuários,
+              produtos, pedidos e pagamentos. Integrações com gateways como
+              Stripe e PayPal, além de suporte a tokens JWT e CORS configurado.
+              Utiliza PostgreSQL como banco de dados relacional, com SQLAlchemy
+              para ORM e migrações com Alembic. Foco em escalabilidade,
+              segurança e documentação clara via Swagger/OpenAPI. Se quiser,
+              posso adaptar com detalhes específicos do seu projeto (como
+              autenticação, envio de e-mails, logs, testes, etc.).
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="product-card">
+            <header class="card-header">
+              <h3>Algorithms Python</h3>
+              <a
+                href="https://github.com/dizerdev/algoritmos-python"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+              </a>
+            </header>
+            <p>
+              Claro, segue um resumo profissional em até cinco linhas para o seu
+              repositório de algoritmos em Python: Repositório de algoritmos
+              implementados em Python, com foco em lógica computacional e
+              inteligência artificial. Inclui algoritmos de Lógica Difusa (com
+              scikit-fuzzy), Ordenação, Busca e Otimização (com mlrose). Utiliza
+              bibliotecas como NumPy, SciPy e scikit-learn para suporte
+              matemático e análise de desempenho. O ambiente é compatível com
+              IPython e notebooks interativos, favorecendo testes e
+              visualizações. Organizado para fins didáticos e experimentais.
+            </p>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="product-card">
+            <header class="card-header">
+              <h3>Speedometer</h3>
+              <a
+                href="https://github.com/dizerdev/speedometer"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="./static/assets/github-icon.png" alt="Link GitHub" />
+              </a>
+            </header>
+            <p>
+              Projeto em JavaScript puro que utiliza a API de Geolocalização do
+              navegador para capturar a localização exata do usuário. Os dados
+              são armazenados localmente utilizando o Local Storage, garantindo
+              persistência entre sessões. Integra com o OpenStreetMap para
+              renderização de mapas interativos e componentes visuais
+              customizáveis. Foco em simplicidade, desempenho e independência de
+              frameworks externos. Ideal para aplicações que demandam
+              rastreamento geográfico leve e responsivo diretamente no
+              navegador.
+            </p>
+          </article>
         </div>
 
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Python Library
-            <a
-              href="https://github.com/dizerdev/py-lib"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-
-          <ul>
-            <strong>Biblioteca Python com:</strong>
-            <li>
-              Códigos para desenvolvimento de APIs e Micros-serviços utilizando
-              a biblioteca <strong>Flask</strong>
-            </li>
-            <li>
-              Códigos no paradigma de
-              <strong>Programação Orientada a Objetos</strong>
-            </li>
-            <li>
-              Códigos de scripts <strong>SQL</strong> e <strong>T-SQL</strong>
-            </li>
-            <li>
-              Código de um CRUD em <strong>Flask</strong>,
-              <strong>PostgreSQL</strong> e suas dependências
-            </li>
-          </ul>
-        </div>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            Algorithms Python
-            <a
-              href="https://github.com/dizerdev/algoritmos-python"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-
-          <ul>
-            <strong>Algoritmos Python com:</strong>
-            <li>
-              Algoritmos de busca em grafos para <strong>busca gulosa</strong>,
-              <strong>busca à estrela</strong> e
-              <strong>pesquisa binária</strong>
-            </li>
-            <li>
-              Algoritmo para ordenação de vetor utilizando a biblioteca
-              <strong>numpy</strong>
-            </li>
-            <li>
-              Algoritmo para aplicação de Lógica Fuzzy utilizando biblioteca
-              <strong>skfuzzy</strong>
-            </li>
-            <li>
-              Algoritmos de otimização utilizando a biblioteca
-              <strong>mlrose</strong>
-            </li>
-          </ul>
-        </div>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            PHP7 Library
-            <a
-              href="https://github.com/dizerdev/php-lib"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-
-          <ul>
-            <strong>Biblioteca PHP7 com:</strong>
-            <li>
-              Códigos sobre o básico da linguagem com sintaxe, variáveis e
-              operadores
-            </li>
-            <li>Códigos para auxiliar na Programação Orientada a Objetos</li>
-            <li>Códigos de consulta SQL e T-SQL</li>
-            <li>
-              Códigos de um CRUD utilizando PostgreSQL e suas dependências
-            </li>
-          </ul>
-        </div>
-
-        <div class="product-card">
-          <h3 class="h3-card-home">
-            JavaScript Library
-            <a
-              href="https://github.com/dizerdev/py-lib"
-              target="_blank"
-              rel="noreferrer noopener"
-              ><img src="./static/assets/github-icon.png" alt="logo-github"
-            /></a>
-          </h3>
-
-          <ul>
-            <strong>Biblioteca JavaScript com:</strong>
-            <li>Estrutura de dados, condicionais e operadores.</li>
-            <li>Objetos nativos da linguagem</li>
-            <li>Sintaxe basica do AJAX</li>
-            <li>Códigos escritos com testes unitários.</li>
-          </ul>
-        </div>
-
-        <h1 class="more-h1">
-          Contribuições
+        <section class="contributions-section">
+          <h2 class="more-h1">Contribuições</h2>
           <img
             class="ghchart"
+            width="80%"
             src="https://ghchart.rshah.org/dizerdev"
             alt="Gráfico de Contribuições GitHub"
           />
-        </h1>
+        </section>
       </section>
     </main>
 

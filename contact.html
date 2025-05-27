@@ -25,6 +25,7 @@
         <h2>Software Engineer</h2>
       </div>
     </header>
+
     <nav id="navbar" class="navbar">
       <ul class="links">
         <li class="button-header">
@@ -45,7 +46,8 @@
         <span class="slider-theme"></span>
       </label>
     </nav>
-    <main class="main-contact">
+
+    <main class="main-section" id="main-section">
       <section class="contact-section">
         <h2>Entre em Contato</h2>
         <p>
@@ -200,14 +202,12 @@
       const header = document.getElementById('header');
       const footer = document.getElementById('footer');
       const navbar = document.getElementById('navbar');
-      const containerContact = document.getElementById('container-about');
-      const mainContact = document.getElementById('main-about');
+      const mainSection = document.getElementById('main-section');
       theme.addEventListener('click', () => {
         header.classList.toggle('dark');
         footer.classList.toggle('dark');
         navbar.classList.toggle('dark');
-        containerAbout.classList.toggle('dark');
-        mainAbout.classList.toggle('dark');
+        mainSection.classList.toggle('dark');
       });
     </script>
   </body>
