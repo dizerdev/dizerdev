@@ -49,64 +49,89 @@
 
     <main class="main-section" id="main-section">
       <section class="contact-section">
-        <h2>Entre em Contato</h2>
-        <p>
-          Fique à vontade para solicitar um orçamento ou tirar dúvidas sobre
-          meus serviços.
-        </p>
+        <h2 class="contact-title">Entre em Contato</h2>
 
-        <form
-          action="mailto:zerbiniprogramador@gmail.com"
-          method="POST"
-          enctype="text/plain"
-          class="contact-form"
-        >
-          <div class="form-group">
-            <label for="name">Nome</label>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Seu nome completo"
-              required
-            />
-          </div>
+        <div class="contact-card-grid">
+          <!-- YouTube -->
+          <article class="contact-card">
+            <a
+              href="https://youtube.com/@diegosantosdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./static/assets/youtube-icon.png"
+                alt="YouTube"
+                class="contact-icon"
+              />
+              <span>YouTube</span>
+            </a>
+          </article>
 
-          <div class="form-group">
-            <label for="email">E-mail</label>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="seu@email.com"
-              required
-            />
-          </div>
+          <!-- LinkedIn -->
+          <article class="contact-card">
+            <a
+              href="https://linkedin.com/in/dizerdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./static/assets/linkedin-icon.png"
+                alt="LinkedIn"
+                class="contact-icon"
+              />
+              <span>LinkedIn</span>
+            </a>
+          </article>
 
-          <div class="form-group">
-            <label for="subject">Assunto</label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              placeholder="Orçamento, dúvida, etc."
-              required
-            />
-          </div>
+          <!-- Instagram
+          <article class="contact-card">
+            <a
+              href="https://instagram.com/seu_usuario"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./static/assets/instagram-icon.svg"
+                alt="Instagram"
+                class="contact-icon"
+              />
+              <span>Instagram</span>
+            </a>
+          </article> -->
 
-          <div class="form-group">
-            <label for="message">Mensagem</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="6"
-              placeholder="Escreva sua mensagem aqui..."
-              required
-            ></textarea>
-          </div>
+          <!-- GitHub -->
+          <article class="contact-card">
+            <a
+              href="https://github.com/dizerdev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="./static/assets/github-icon.png"
+                alt="GitHub"
+                class="contact-icon"
+              />
+              <span>GitHub</span>
+            </a>
+          </article>
 
-          <button type="submit" class="submit-button">Enviar Mensagem</button>
-        </form>
+          <!-- Whatsapp -->
+          <article class="contact-card">
+            <a
+              href="https://wa.me/message/MTG3FKJWBA53L1"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <img
+                src="./static/assets/whatsapp-icon.png"
+                alt="E-mail"
+                class="contact-icon"
+              />
+              <span>Whatsapp</span>
+            </a>
+          </article>
+        </div>
       </section>
     </main>
 
